@@ -2,7 +2,6 @@ package com.asos;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
@@ -16,7 +15,7 @@ public class WebDriverSettings{
 
     @BeforeTest
     public void setupTest() {
-        System.setProperty("webdriver.chrome.driver", "C://QA/Automation/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ".../chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.asos.com");
         driver.manage().window().maximize();
