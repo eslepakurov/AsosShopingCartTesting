@@ -15,6 +15,8 @@ public class MainPage {
 
     By myAccountLocator = By.id("myAccountDropdown");
     By signInPageLinkLocator = By.className("_1k1reGo");
+    By menLocator = By.cssSelector("a[href='http://www.asos.com/men/']");
+    By cartLocator = By.xpath("//div[@id='chrome-sticky-header']/div/div/ul[2]/li[3]/a/span[2]");
 
     public void openAccountDropdown() {
         Actions builder = new Actions(driver);
@@ -25,4 +27,13 @@ public class MainPage {
     public void openSignInPage() {
         driver.findElement(signInPageLinkLocator).click();
     }
+
+    public void openMenSection() {
+        driver.findElement(menLocator).click();
+    }
+
+    public void openCartPage() {
+        driver.findElement(cartLocator).click();
+    }
+
 }
