@@ -17,7 +17,6 @@ public class PDPage {
 
 
     public void openSizeDropdown() {
-
         driver.findElement(sizeDropdownLocator).click();
         Select selectSize = new Select(driver.findElement(sizeDropdownLocator));
         selectSize.selectByVisibleText("W30in L32in");
@@ -26,7 +25,6 @@ public class PDPage {
     public void addToBag() {
         driver.findElement(addToBagButtonLocator).click();
     }
-
 
 }
 
