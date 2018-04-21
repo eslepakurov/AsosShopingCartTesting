@@ -18,8 +18,8 @@ public class SignInPage {
 
     public void enterEmail(String email) {
         WebElement emailInput = driver.findElement(emailInputLocator);
-                emailInput.click();
-                emailInput.sendKeys(email);
+            emailInput.click();
+            emailInput.sendKeys(email);
     }
 
     public void enterPassword(String password) {
