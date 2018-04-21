@@ -29,4 +29,5 @@ public class CartTest extends WebDriverSettings{
         mainPage.openCartPage();
         cartPage.assertElement();
     }
+
 }

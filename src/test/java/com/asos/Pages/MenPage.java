@@ -16,7 +16,7 @@ public class MenPage {
     By jeansLinkLocator = By.xpath("(//a[contains(text(),'Jeans')])[5]");
 
     public void openClothingDropdown() {
-                driver.findElement(clothingDropdownLocator).click();
+        driver.findElement(clothingDropdownLocator).click();
     }
 
     public void openJeansPage() {
