@@ -15,7 +15,7 @@ public class WebDriverSettings{
 
     @BeforeTest
     public void setupTest() {
-        System.setProperty("webdriver.chrome.driver", "C://QA/Automation/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ".../chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://www.asos.com");
         driver.manage().window().maximize();
